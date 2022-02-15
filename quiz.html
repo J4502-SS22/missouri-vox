@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+		<link rel="stylesheet" href="main.css">
+		<script src="quiz.js" defer></script>
+	</head>
+	<body>
+		<a class="skip-link" href="#content">Skip to content</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="quiz.html">Quiz</a></li>
+				<li><a href="election2020.html">2020 Election</a></li>
+			</ul>
+		</nav>
+		<header class="page-header">
+			<h1>How much do you know about Mizzou?</h1>
+		</header>
+		<main id="content">
+			<div class="background-big columns">
+				<div class="main-content-area">
+					<fieldset class="question">
+						<h3>How many columns are on the quad?</h3>
+						<div><input id="four" type="radio" name="columns" value="four">
+							<label for="four">Four</label>
+						</div>
+						<div><input id="five" type="radio" name="columns" value="five">
+							<label for="five">Five</label>
+						</div>
+						<div><input id="six" type="radio" name="columns" value="six">
+							<label for="six">Six</label>
+						</div>
+					</fieldset>
+					<fieldset class="question">
+						<h3>What is the name of Mizzou's mascot?</h3>
+						<div><input id="truman" type="radio" name="mascot" value="truman">
+							<label for="truman">Truman</label>
+						</div>
+						<div><input id="harry" type="radio" name="mascot" value="harry">
+							<label for="harry">Harry</label>
+						</div>
+						<div><input id="nothing" type="radio" name="mascot" value="nothing">
+							<label for="nothing">Nothing, it has no name</label>
+						</div>
+					</fieldset>
+					<fieldset class="question">
+						<h3>What is the name of the pizza place at Ninth and Elm streets?</h3>
+						<div><input id="gumbys" type="radio" name="pizza" value="gumbys">
+							<label for="gumbys">Gumby's</label>
+						</div>
+						<div><input id="shakespeares" type="radio" name="pizza" value="shakespeares">
+							<label for="shakespeares">Shakespeare's</label>
+						</div>
+						<div><input id="pizzatree" type="radio" name="pizza" value="pizzatree">
+							<label for="pizzatree">Pizza Tree</label>
+						</div>
+					</fieldset>
+					<fieldset class="question">
+						<h3>What are the call letters for the radio station affiliated with the J-school?</h3>
+						<div><input id="kcou" type="radio" name="radio-station" value="radio-station">
+							<label for="radio-station">KCOU</label>
+						</div>
+						<div><input id="komu" type="radio" name="radio-station" value="komu">
+							<label for="komu">KOMU</label>
+						</div>
+						<div><input id="kbia" type="radio" name="radio-station" value="kbia">
+							<label for="kbia">KBIA</label>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<div class="submit-and-answer">
+				<button id="submit">Submit</button>
+				<p class="answers" id="answerTally"></p>
+			</div>
+		</main>
+	</body>
+</html>
